@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5273553229EB05FD009AA284 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273553129EB05FD009AA284 /* AppDelegate.swift */; };
+		5273553B29EB05FD009AA284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5273553A29EB05FD009AA284 /* Assets.xcassets */; };
+		5273553E29EB05FD009AA284 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5273553C29EB05FD009AA284 /* LaunchScreen.storyboard */; };
+		528B32C329ED63B600B0B7B1 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B32C229ED63B600B0B7B1 /* ForecastViewModel.swift */; };
+		528B32C529ED682E00B0B7B1 /* RequestEncodingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273554C29EB069D009AA284 /* RequestEncodingType.swift */; };
+		528B32C629ED682E00B0B7B1 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273554D29EB069D009AA284 /* AppError.swift */; };
+		528B32C729ED682E00B0B7B1 /* AsyncRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273554A29EB069D009AA284 /* AsyncRequest.swift */; };
+		528B32C829ED682E00B0B7B1 /* MakeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273554E29EB069D009AA284 /* MakeRequest.swift */; };
+		528B32C929ED682E00B0B7B1 /* NetworkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273555429EB069D009AA284 /* NetworkState.swift */; };
+		528B32CA29ED682E00B0B7B1 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273555229EB069D009AA284 /* RequestMethod.swift */; };
+		528B32CB29ED682E00B0B7B1 /* RequestReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273555629EB069D009AA284 /* RequestReusable.swift */; };
+		528B32CC29ED682E00B0B7B1 /* JsonEncadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273554B29EB069D009AA284 /* JsonEncadable.swift */; };
+		528B32CD29ED682E00B0B7B1 /* RequestUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273554F29EB069D009AA284 /* RequestUrl.swift */; };
+		528B32CE29ED682E00B0B7B1 /* AppRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273555029EB069D009AA284 /* AppRequestInterceptor.swift */; };
+		528B32D029ED699700B0B7B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B32CF29ED699700B0B7B1 /* Constants.swift */; };
+		528B32D229ED69DF00B0B7B1 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B32D129ED69DF00B0B7B1 /* Urls.swift */; };
+		528B32D529ED6B1600B0B7B1 /* ForecastDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B32D429ED6B1600B0B7B1 /* ForecastDataSource.swift */; };
+		528B32D829ED6DEF00B0B7B1 /* ForecastRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B32D729ED6DEF00B0B7B1 /* ForecastRepository.swift */; };
+		528B32DB29ED6ED300B0B7B1 /* SearchWithLatLngBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B32DA29ED6ED300B0B7B1 /* SearchWithLatLngBody.swift */; };
+		528B32DE29ED6F0000B0B7B1 /* ForecastRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B32DD29ED6F0000B0B7B1 /* ForecastRequest.swift */; };
+		528B32E029ED764F00B0B7B1 /* SearchTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B32DF29ED764F00B0B7B1 /* SearchTypeEnum.swift */; };
+		528B32E329ED76D400B0B7B1 /* LocationManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B32E229ED76D400B0B7B1 /* LocationManger.swift */; };
+		528B32E629ED7C5A00B0B7B1 /* ForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B32E529ED7C5A00B0B7B1 /* ForecastResponse.swift */; };
+		528B32E829ED7D6900B0B7B1 /* BaseResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B32E729ED7D6900B0B7B1 /* BaseResponseProtocol.swift */; };
+		528B32EA29ED7F5D00B0B7B1 /* ForecastUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B32E929ED7F5D00B0B7B1 /* ForecastUseCase.swift */; };
+		528B32EC29ED802E00B0B7B1 /* ForecastScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B32EB29ED802E00B0B7B1 /* ForecastScreenData.swift */; };
+		528B32EF29ED818600B0B7B1 /* Publisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B32EE29ED818600B0B7B1 /* Publisher+.swift */; };
+		528B32F229ED923800B0B7B1 /* ForecastTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B32F129ED923800B0B7B1 /* ForecastTableDataSource.swift */; };
+		528B32F629EDA16900B0B7B1 /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B32F429EDA0C600B0B7B1 /* UserDefaults+.swift */; };
+		528B32F729EDA16900B0B7B1 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B32F529EDA0C600B0B7B1 /* UserDefault.swift */; };
+		52A2A9BF29EB0B080018E4FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A2A9BD29EB0B080018E4FE /* HomeViewController.swift */; };
+		52A2A9C029EB0B080018E4FE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A2A9BE29EB0B080018E4FE /* HomeViewController.xib */; };
+		52A2A9C429EB69870018E4FE /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A2A9C229EB69870018E4FE /* ForecastViewController.swift */; };
+		52A2A9C529EB69870018E4FE /* ForecastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A2A9C329EB69870018E4FE /* ForecastViewController.xib */; };
+		52A2A9C729EBF2880018E4FE /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A2A9C629EB738A0018E4FE /* PickerViewController.swift */; };
+		DD72A87AFBD760FE35C750BB /* Pods_Transflo_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073AC9261BC8AE1F5184B58A /* Pods_Transflo_Task.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		073AC9261BC8AE1F5184B58A /* Pods_Transflo_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transflo_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5273552E29EB05FD009AA284 /* Transflo Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Transflo Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5273553129EB05FD009AA284 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5273553A29EB05FD009AA284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5273553D29EB05FD009AA284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5273553F29EB05FD009AA284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5273554A29EB069D009AA284 /* AsyncRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRequest.swift; sourceTree = "<group>"; };
+		5273554B29EB069D009AA284 /* JsonEncadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonEncadable.swift; sourceTree = "<group>"; };
+		5273554C29EB069D009AA284 /* RequestEncodingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestEncodingType.swift; sourceTree = "<group>"; };
+		5273554D29EB069D009AA284 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		5273554E29EB069D009AA284 /* MakeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeRequest.swift; sourceTree = "<group>"; };
+		5273554F29EB069D009AA284 /* RequestUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUrl.swift; sourceTree = "<group>"; };
+		5273555029EB069D009AA284 /* AppRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRequestInterceptor.swift; sourceTree = "<group>"; };
+		5273555229EB069D009AA284 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		5273555429EB069D009AA284 /* NetworkState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkState.swift; sourceTree = "<group>"; };
+		5273555629EB069D009AA284 /* RequestReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReusable.swift; sourceTree = "<group>"; };
+		528B32C229ED63B600B0B7B1 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
+		528B32CF29ED699700B0B7B1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		528B32D129ED69DF00B0B7B1 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		528B32D429ED6B1600B0B7B1 /* ForecastDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDataSource.swift; sourceTree = "<group>"; };
+		528B32D729ED6DEF00B0B7B1 /* ForecastRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastRepository.swift; sourceTree = "<group>"; };
+		528B32DA29ED6ED300B0B7B1 /* SearchWithLatLngBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWithLatLngBody.swift; sourceTree = "<group>"; };
+		528B32DD29ED6F0000B0B7B1 /* ForecastRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastRequest.swift; sourceTree = "<group>"; };
+		528B32DF29ED764F00B0B7B1 /* SearchTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTypeEnum.swift; sourceTree = "<group>"; };
+		528B32E229ED76D400B0B7B1 /* LocationManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManger.swift; sourceTree = "<group>"; };
+		528B32E529ED7C5A00B0B7B1 /* ForecastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastResponse.swift; sourceTree = "<group>"; };
+		528B32E729ED7D6900B0B7B1 /* BaseResponseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponseProtocol.swift; sourceTree = "<group>"; };
+		528B32E929ED7F5D00B0B7B1 /* ForecastUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastUseCase.swift; sourceTree = "<group>"; };
+		528B32EB29ED802E00B0B7B1 /* ForecastScreenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastScreenData.swift; sourceTree = "<group>"; };
+		528B32EE29ED818600B0B7B1 /* Publisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+.swift"; sourceTree = "<group>"; };
+		528B32F129ED923800B0B7B1 /* ForecastTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableDataSource.swift; sourceTree = "<group>"; };
+		528B32F429EDA0C600B0B7B1 /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
+		528B32F529EDA0C600B0B7B1 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		52A2A9BD29EB0B080018E4FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		52A2A9BE29EB0B080018E4FE /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		52A2A9C229EB69870018E4FE /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
+		52A2A9C329EB69870018E4FE /* ForecastViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastViewController.xib; sourceTree = "<group>"; };
+		52A2A9C629EB738A0018E4FE /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		577CC3FF73CC4A0FD3C303B0 /* Pods-Transflo Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transflo Task.release.xcconfig"; path = "Target Support Files/Pods-Transflo Task/Pods-Transflo Task.release.xcconfig"; sourceTree = "<group>"; };
+		CCAD1F1401F27AF23E1695C8 /* Pods-Transflo Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transflo Task.debug.xcconfig"; path = "Target Support Files/Pods-Transflo Task/Pods-Transflo Task.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5273552B29EB05FD009AA284 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD72A87AFBD760FE35C750BB /* Pods_Transflo_Task.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48FEC8BD02294707ABF28F89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCAD1F1401F27AF23E1695C8 /* Pods-Transflo Task.debug.xcconfig */,
+				577CC3FF73CC4A0FD3C303B0 /* Pods-Transflo Task.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5273552529EB05FC009AA284 = {
+			isa = PBXGroup;
+			children = (
+				5273553029EB05FD009AA284 /* Transflo Task */,
+				5273552F29EB05FD009AA284 /* Products */,
+				48FEC8BD02294707ABF28F89 /* Pods */,
+				53A1FDEA2650294FDE9E10B7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5273552F29EB05FD009AA284 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5273552E29EB05FD009AA284 /* Transflo Task.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5273553029EB05FD009AA284 /* Transflo Task */ = {
+			isa = PBXGroup;
+			children = (
+				528B32F329EDA0BB00B0B7B1 /* Storage */,
+				528B32ED29ED817E00B0B7B1 /* Extensions */,
+				528B32E429ED7BBD00B0B7B1 /* Entity */,
+				528B32E129ED76C400B0B7B1 /* Helpers */,
+				528B32D329ED6B0C00B0B7B1 /* Domain Layer */,
+				52A2A9BB29EB09EC0018E4FE /* App Config */,
+				5273554829EB069D009AA284 /* Data Layer */,
+				5273554729EB0687009AA284 /* App Layer */,
+				5273554629EB065C009AA284 /* Presention Layer */,
+				5273554529EB0636009AA284 /* Utility */,
+			);
+			path = "Transflo Task";
+			sourceTree = "<group>";
+		};
+		5273554529EB0636009AA284 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5273553C29EB05FD009AA284 /* LaunchScreen.storyboard */,
+				5273553A29EB05FD009AA284 /* Assets.xcassets */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		5273554629EB065C009AA284 /* Presention Layer */ = {
+			isa = PBXGroup;
+			children = (
+				52A2A9BC29EB0A500018E4FE /* Home */,
+				52A2A9C129EB697F0018E4FE /* Forecast */,
+			);
+			path = "Presention Layer";
+			sourceTree = "<group>";
+		};
+		5273554729EB0687009AA284 /* App Layer */ = {
+			isa = PBXGroup;
+			children = (
+				5273553129EB05FD009AA284 /* AppDelegate.swift */,
+			);
+			path = "App Layer";
+			sourceTree = "<group>";
+		};
+		5273554829EB069D009AA284 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				528B32D929ED6ECD00B0B7B1 /* Body */,
+				528B32D629ED6D9800B0B7B1 /* Repository */,
+				5273554929EB069D009AA284 /* Network */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		5273554929EB069D009AA284 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5273554A29EB069D009AA284 /* AsyncRequest.swift */,
+				5273554B29EB069D009AA284 /* JsonEncadable.swift */,
+				5273554C29EB069D009AA284 /* RequestEncodingType.swift */,
+				5273554D29EB069D009AA284 /* AppError.swift */,
+				5273554E29EB069D009AA284 /* MakeRequest.swift */,
+				5273554F29EB069D009AA284 /* RequestUrl.swift */,
+				5273555029EB069D009AA284 /* AppRequestInterceptor.swift */,
+				5273555229EB069D009AA284 /* RequestMethod.swift */,
+				5273555429EB069D009AA284 /* NetworkState.swift */,
+				528B32E729ED7D6900B0B7B1 /* BaseResponseProtocol.swift */,
+				5273555629EB069D009AA284 /* RequestReusable.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		528B32D329ED6B0C00B0B7B1 /* Domain Layer */ = {
+			isa = PBXGroup;
+			children = (
+				528B32F029ED8BFA00B0B7B1 /* UseCase */,
+				528B32DC29ED6EF600B0B7B1 /* Requests */,
+				528B32D429ED6B1600B0B7B1 /* ForecastDataSource.swift */,
+			);
+			path = "Domain Layer";
+			sourceTree = "<group>";
+		};
+		528B32D629ED6D9800B0B7B1 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				528B32D729ED6DEF00B0B7B1 /* ForecastRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		528B32D929ED6ECD00B0B7B1 /* Body */ = {
+			isa = PBXGroup;
+			children = (
+				528B32DA29ED6ED300B0B7B1 /* SearchWithLatLngBody.swift */,
+			);
+			path = Body;
+			sourceTree = "<group>";
+		};
+		528B32DC29ED6EF600B0B7B1 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				528B32DD29ED6F0000B0B7B1 /* ForecastRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		528B32E129ED76C400B0B7B1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				52A2A9C629EB738A0018E4FE /* PickerViewController.swift */,
+				528B32E229ED76D400B0B7B1 /* LocationManger.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		528B32E429ED7BBD00B0B7B1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				528B32E529ED7C5A00B0B7B1 /* ForecastResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		528B32ED29ED817E00B0B7B1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				528B32EE29ED818600B0B7B1 /* Publisher+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		528B32F029ED8BFA00B0B7B1 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				528B32E929ED7F5D00B0B7B1 /* ForecastUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		528B32F329EDA0BB00B0B7B1 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				528B32F529EDA0C600B0B7B1 /* UserDefault.swift */,
+				528B32F429EDA0C600B0B7B1 /* UserDefaults+.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		52A2A9BB29EB09EC0018E4FE /* App Config */ = {
+			isa = PBXGroup;
+			children = (
+				5273553F29EB05FD009AA284 /* Info.plist */,
+				528B32CF29ED699700B0B7B1 /* Constants.swift */,
+				528B32D129ED69DF00B0B7B1 /* Urls.swift */,
+			);
+			path = "App Config";
+			sourceTree = "<group>";
+		};
+		52A2A9BC29EB0A500018E4FE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				52A2A9BD29EB0B080018E4FE /* HomeViewController.swift */,
+				52A2A9BE29EB0B080018E4FE /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		52A2A9C129EB697F0018E4FE /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				52A2A9C329EB69870018E4FE /* ForecastViewController.xib */,
+				52A2A9C229EB69870018E4FE /* ForecastViewController.swift */,
+				528B32F129ED923800B0B7B1 /* ForecastTableDataSource.swift */,
+				528B32C229ED63B600B0B7B1 /* ForecastViewModel.swift */,
+				528B32DF29ED764F00B0B7B1 /* SearchTypeEnum.swift */,
+				528B32EB29ED802E00B0B7B1 /* ForecastScreenData.swift */,
+			);
+			path = Forecast;
+			sourceTree = "<group>";
+		};
+		53A1FDEA2650294FDE9E10B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				073AC9261BC8AE1F5184B58A /* Pods_Transflo_Task.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5273552D29EB05FD009AA284 /* Transflo Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5273554229EB05FD009AA284 /* Build configuration list for PBXNativeTarget "Transflo Task" */;
+			buildPhases = (
+				5972D74B4DD6A38D2DD2952A /* [CP] Check Pods Manifest.lock */,
+				5273552A29EB05FD009AA284 /* Sources */,
+				5273552B29EB05FD009AA284 /* Frameworks */,
+				5273552C29EB05FD009AA284 /* Resources */,
+				820BF31261DAB547163330F2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Transflo Task";
+			productName = "Transflo Task";
+			productReference = 5273552E29EB05FD009AA284 /* Transflo Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5273552629EB05FC009AA284 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5273552D29EB05FD009AA284 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 5273552929EB05FC009AA284 /* Build configuration list for PBXProject "Transflo Task" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5273552529EB05FC009AA284;
+			productRefGroup = 5273552F29EB05FD009AA284 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5273552D29EB05FD009AA284 /* Transflo Task */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5273552C29EB05FD009AA284 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5273553E29EB05FD009AA284 /* LaunchScreen.storyboard in Resources */,
+				52A2A9C529EB69870018E4FE /* ForecastViewController.xib in Resources */,
+				5273553B29EB05FD009AA284 /* Assets.xcassets in Resources */,
+				52A2A9C029EB0B080018E4FE /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5972D74B4DD6A38D2DD2952A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Transflo Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		820BF31261DAB547163330F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Transflo Task/Pods-Transflo Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Transflo Task/Pods-Transflo Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Transflo Task/Pods-Transflo Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5273552A29EB05FD009AA284 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528B32EF29ED818600B0B7B1 /* Publisher+.swift in Sources */,
+				5273553229EB05FD009AA284 /* AppDelegate.swift in Sources */,
+				528B32D029ED699700B0B7B1 /* Constants.swift in Sources */,
+				528B32DE29ED6F0000B0B7B1 /* ForecastRequest.swift in Sources */,
+				528B32E829ED7D6900B0B7B1 /* BaseResponseProtocol.swift in Sources */,
+				528B32D829ED6DEF00B0B7B1 /* ForecastRepository.swift in Sources */,
+				528B32CD29ED682E00B0B7B1 /* RequestUrl.swift in Sources */,
+				528B32CB29ED682E00B0B7B1 /* RequestReusable.swift in Sources */,
+				52A2A9BF29EB0B080018E4FE /* HomeViewController.swift in Sources */,
+				528B32DB29ED6ED300B0B7B1 /* SearchWithLatLngBody.swift in Sources */,
+				52A2A9C729EBF2880018E4FE /* PickerViewController.swift in Sources */,
+				528B32F729EDA16900B0B7B1 /* UserDefault.swift in Sources */,
+				528B32E329ED76D400B0B7B1 /* LocationManger.swift in Sources */,
+				528B32CC29ED682E00B0B7B1 /* JsonEncadable.swift in Sources */,
+				528B32CA29ED682E00B0B7B1 /* RequestMethod.swift in Sources */,
+				528B32EC29ED802E00B0B7B1 /* ForecastScreenData.swift in Sources */,
+				528B32D229ED69DF00B0B7B1 /* Urls.swift in Sources */,
+				528B32C629ED682E00B0B7B1 /* AppError.swift in Sources */,
+				528B32C829ED682E00B0B7B1 /* MakeRequest.swift in Sources */,
+				528B32F229ED923800B0B7B1 /* ForecastTableDataSource.swift in Sources */,
+				52A2A9C429EB69870018E4FE /* ForecastViewController.swift in Sources */,
+				528B32D529ED6B1600B0B7B1 /* ForecastDataSource.swift in Sources */,
+				528B32EA29ED7F5D00B0B7B1 /* ForecastUseCase.swift in Sources */,
+				528B32F629EDA16900B0B7B1 /* UserDefaults+.swift in Sources */,
+				528B32E629ED7C5A00B0B7B1 /* ForecastResponse.swift in Sources */,
+				528B32E029ED764F00B0B7B1 /* SearchTypeEnum.swift in Sources */,
+				528B32C929ED682E00B0B7B1 /* NetworkState.swift in Sources */,
+				528B32C529ED682E00B0B7B1 /* RequestEncodingType.swift in Sources */,
+				528B32C329ED63B600B0B7B1 /* ForecastViewModel.swift in Sources */,
+				528B32C729ED682E00B0B7B1 /* AsyncRequest.swift in Sources */,
+				528B32CE29ED682E00B0B7B1 /* AppRequestInterceptor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5273553C29EB05FD009AA284 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5273553D29EB05FD009AA284 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5273554029EB05FD009AA284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5273554129EB05FD009AA284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5273554329EB05FD009AA284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCAD1F1401F27AF23E1695C8 /* Pods-Transflo Task.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z5X4XX28B;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Transflo Task/App Config/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Transflo Wants To Access Your Location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Transflo Wants To Access Your Location.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.transflo.Transflo-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5273554429EB05FD009AA284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 577CC3FF73CC4A0FD3C303B0 /* Pods-Transflo Task.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z5X4XX28B;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Transflo Task/App Config/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Transflo Wants To Access Your Location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Transflo Wants To Access Your Location.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.transflo.Transflo-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5273552929EB05FC009AA284 /* Build configuration list for PBXProject "Transflo Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5273554029EB05FD009AA284 /* Debug */,
+				5273554129EB05FD009AA284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5273554229EB05FD009AA284 /* Build configuration list for PBXNativeTarget "Transflo Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5273554329EB05FD009AA284 /* Debug */,
+				5273554429EB05FD009AA284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5273552629EB05FC009AA284 /* Project object */;
+}
